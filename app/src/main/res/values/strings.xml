@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WagCodeChallenge</string>
+
+    <string name="user_bronze">Bronze :</string>
+    <string name="user_silver">Silver :</string>
+    <string name="user_gold">Gold :</string>
+    <string name="refresh">Refresh</string>
+</resources>
