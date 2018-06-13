@@ -26,7 +26,7 @@ public class UserModel {
 
     @SerializedName("badge_counts")
     @Embedded
-    private BadgeResponse badgeResponse;
+    private BadgeModel badgeModel;
 
 
 
@@ -62,11 +62,11 @@ public class UserModel {
         this.link = link;
     }
 
-    public BadgeResponse getBadgeResponse() {
-        return badgeResponse;
+    public BadgeModel getBadgeModel() {
+        return badgeModel;
     }
 
-    public void setBadgeResponse(BadgeResponse badgeResponse) {
-        this.badgeResponse = badgeResponse;
+    public void setBadgeModel(BadgeModel badgeModel) {
+        this.badgeModel = badgeModel;
     }
 }

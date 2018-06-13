@@ -55,9 +55,9 @@ public class UsersRecyclerViewAdapter extends RecyclerView.Adapter<UsersRecycler
         public void bind(UserModel user) {
             if (user != null) {
                 userName.setText(user.getDisplayName());
-                goldBadges.setText(user.getBadgeResponse().getGoldString());
-                silverBadges.setText(user.getBadgeResponse().getSilverString());
-                bronzeBadges.setText(user.getBadgeResponse().getBronzeString());
+                goldBadges.setText(user.getBadgeModel().getGoldString());
+                silverBadges.setText(user.getBadgeModel().getSilverString());
+                bronzeBadges.setText(user.getBadgeModel().getBronzeString());
 
                 //Glide for loading and storing images - NOTE: Glide does store for offline access but default diskCacheStrategy is AUTOMATIC instead of all to save on expensive downloading (and instead resizes current)
                 GlideApp.with(context)

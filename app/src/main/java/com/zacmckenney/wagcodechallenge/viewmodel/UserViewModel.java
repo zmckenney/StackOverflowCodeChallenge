@@ -5,7 +5,7 @@ import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
 
-import com.zacmckenney.wagcodechallenge.model.BadgeResponse;
+import com.zacmckenney.wagcodechallenge.model.BadgeModel;
 import com.zacmckenney.wagcodechallenge.api.StackOverflowApi;
 import com.zacmckenney.wagcodechallenge.api.StackOverflowService;
 import com.zacmckenney.wagcodechallenge.db.StackOverflowLocalCache;
@@ -56,14 +56,14 @@ public class UserViewModel extends AndroidViewModel {
 
     //Just some test data thats easily implemented and good for debugging
     public void testData() {
-        BadgeResponse badges = new BadgeResponse();
+        BadgeModel badges = new BadgeModel();
         badges.setBronze(1234);
         badges.setGold(1234);
         badges.setSilver(1235);
 
         UserModel test = new UserModel();
         test.setDisplayName("testing");
-        test.setBadgeResponse(badges);
+        test.setBadgeModel(badges);
         test.setThumbnailUrl("https://blasdf");
         test.setUserId(4124123);
 

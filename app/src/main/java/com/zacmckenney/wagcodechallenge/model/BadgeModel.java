@@ -2,7 +2,7 @@ package com.zacmckenney.wagcodechallenge.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class BadgeResponse {
+public class BadgeModel {
 
     @SerializedName("bronze")
     private int bronze;
